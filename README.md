@@ -10,12 +10,12 @@ This is the code repository for [Hands-on Full-Stack Web Development with GraphQ
 React, one of the most widely used JavaScript frameworks, allows developers to build fast and scalable front end applications for any use case. GraphQL is the modern way of querying an API. It represents an alternative to REST and is the next evolution in web development. Combining these two revolutionary technologies will give you a future-proof and scalable stack you can start building your business around.
 
 This book covers the following exciting features:
-Resolve data from multi-table database and system architectures 
-Build a GraphQL API by implementing models and schemas with Apollo and Sequelize 
-Set up an Apollo Client and build front end components using React 
-Use Mocha to test your full-stack application 
-Write complex React components and share data across them 
-Deploy your application using Docker 
+* Resolve data from multi-table database and system architectures 
+* Build a GraphQL API by implementing models and schemas with Apollo and Sequelize 
+* Set up an Apollo Client and build front end components using React 
+* Use Mocha to test your full-stack application 
+* Write complex React components and share data across them 
+* Deploy your application using Docker 
 
 If you feel this book is for you, get your [copy](https://www.amazon.com/dp/1789134528) today!
 
