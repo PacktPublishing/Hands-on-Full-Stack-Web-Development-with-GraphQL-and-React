@@ -1,0 +1,197 @@
+body {
+    background-color: #f6f7f9;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace
+}
+p {
+    margin-bottom: 0;
+}
+.container {
+    max-width: 500px;
+    margin: 50px auto 0 auto;
+}
+.feed {
+    background-color: #bbb;
+    padding: 3px;
+    margin-top: 20px;
+}
+.post {
+    background-color: #fff;
+    margin: 5px;
+}
+.post .header {
+    height: 60px;
+}
+.post .header > *, .chats .chat .header > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.post .header img, .chats .chat .header img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+.post .header h2 {
+    color: #333;
+    font-size: 24px;
+    margin: 0 0 0 5px;
+}
+.post p.content {
+    margin: 5px;
+    padding: 5px;
+    min-height: 50px;
+}
+form {
+    padding-bottom: 20px;
+}
+form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-color: #bbb;
+}
+form [type=submit] {
+    border: none;
+    background-color: #6ca6fd;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    float: right;
+}
+
+.optimistic {
+    -webkit-animation: scale-up 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes scale-up {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.chats {
+    background-color: #eee;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    border-left: 1px solid #c3c3c3;
+}
+  
+.chats .chat {
+    cursor: pointer;
+}
+
+.chats .chat .header > div {
+    width: calc(100% - 65px);
+    font-size: 16px;
+    margin-left: 5px;
+}
+  
+.chats .chat .header h2, .chats .chat .header span {
+    color: #333;
+    font-size: 16px;
+    margin: 0;
+}
+  
+.chats .chat .header span {
+    color: #333;
+    font-size: 12px;
+}
+
+.chatWindow {
+    width: 250px;
+    float: right;
+    background-color: #eee;
+    height: 300px;
+    margin-right: 10px;
+    border-left: 1px solid #c3c3c3;
+    border-right: 1px solid #c3c3c3;
+}
+  
+.chatWindow .header {
+    width: calc(100% - 10px);
+    background-color: #c3c3c3;
+    padding: 5px;
+    height: 20px;
+}
+  
+.chatWindow .header .close {
+    float: right;
+    border: none;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+}
+  
+.chatWindow .header .close:focus {
+    outline: none;
+}
+  
+.chatWindow .messages {
+    overflow-y: scroll;
+    height: calc(100% - 50px);
+}
+  
+.chatWindow .messages .message {
+    width: 80%;
+    border: 1px solid #4079f3;
+    margin: 2px;
+    border-radius: 5px;
+    padding: 2px;
+}
+  
+.chatWindow .messages .message.left {
+    background-color: #78a3ff;
+    color: #fff;
+    float: left;
+}
+  
+.chatWindow .messages .message.right {
+    float: right;
+    background-color: #E8F4FB;
+    color: #000;
+}
+  
+.openChats {
+    position: fixed;
+    right: 200px;
+    width: calc(100% - 200px);
+    bottom: 0;
+}
+  
+.wrapper {
+    height: 100%;
+    right: 0;
+    top: 0;
+}
+
+
+.chatWindow .input input {
+    width: calc(100% - 4px);
+    border: none;
+    padding: 2px;
+}
+
+.chatWindow .input input:focus {
+    outline: none;
+}
