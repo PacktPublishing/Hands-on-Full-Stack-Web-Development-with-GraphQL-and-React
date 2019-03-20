@@ -1,8 +1,8 @@
 # Hands-on Full-Stack Web Development with GraphQL and React
 
-<a href="https://www.packtpub.com/web-development/hands-full-stack-web-development-graphql-and-react?utm_source=github&utm_medium=repository&utm_campaign=9781789134520 "><img src="https://d1ldz4te4covpm.cloudfront.net/sites/default/files/imagecache/ppv4_main_book_cover/B10514_MockupCover.png" alt="Hands-on Full-Stack Web Development with GraphQL and React" height="256px" align="right"></a>
+<a href="https://www.packtpub.com/web-development/hands-full-stack-web-development-graphql-and-react?utm_source=github&utm_medium=repository&utm_campaign=9781789134520 "><img src="https://www.packtpub.com/sites/default/files/cover_B10514.png" alt="Hands-on Full-Stack Web Development with GraphQL and React" height="256px" align="right"></a>
 
-This is the code repository for [Hands-on Full-Stack Web Development with GraphQL and React](https://www.packtpub.com/web-development/hands-full-stack-web-development-graphql-and-react?utm_source=github&utm_medium=repository&utm_campaign=9781789134520 ), published by Packt.
+This is the code repository for [Hands-on Full-Stack Web Development with GraphQL and React](https://www.packtpub.com/web-development/hands-full-stack-web-development-graphql-and-react?utm_source=github&utm_medium=repository&utm_campaign=9781789134520), published by Packt.
 
 **Build scalable full-stack applications while learning to solve complex problems with GraphQL**
 
