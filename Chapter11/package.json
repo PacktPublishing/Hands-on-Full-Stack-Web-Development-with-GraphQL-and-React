@@ -72,7 +72,7 @@
     "babel-loader": "^8.0.4",
     "babel-plugin-require-context-hook": "^1.0.0",
     "chai": "^4.2.0",
-    "clean-webpack-plugin": "^1.0.0",
+    "clean-webpack-plugin": "^2.0.1",
     "css-loader": "^1.0.1",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.7.1",

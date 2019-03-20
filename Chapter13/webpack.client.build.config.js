@@ -34,7 +34,9 @@ module.exports = {
        ]
     },
     plugins: [
-      new CleanWebpackPlugin([buildDirectory]),
+      new CleanWebpackPlugin({
+        cleanOnceBeforeBuildPatterns: [path.join(__dirname, buildDirectory)]
+      }),
       new ReactLoadablePlugin({
         filename: './dist/react-loadable.json',
       }),

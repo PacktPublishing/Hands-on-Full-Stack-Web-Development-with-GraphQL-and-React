@@ -1,0 +1,60 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:10
+      - image: tkuchiki/delayed-mysql
+        environment:
+          MYSQL_ALLOW_EMPTY_PASSWORD: yes
+          MYSQL_ROOT_PASSWORD: ''
+          MYSQL_DATABASE: graphbook_test
+    steps:
+      - checkout
+      - setup_remote_docker:
+          docker_layer_caching: true
+      - run:
+          name: "Install dependencies"
+          command: npm install
+      - run:
+          name: "Install Sequelize"
+          command: sudo npm install -g mysql2 sequelize sequelize-cli
+      - run:
+          name: Wait for DB
+          command: dockerize -wait tcp://127.0.0.1:3306 -timeout 120s
+      - run:
+          name: "Run migrations for test DB"
+          command: sequelize db:migrate --migrations-path src/server/migrations --config src/server/config/index.js --env production
+          environment:
+            NODE_ENV: production
+            password: ''
+            database: graphbook_test
+            username: root
+            host: localhost
+      - run:
+          name: "Run tests"
+          command: npm run test
+          environment:
+            NODE_ENV: production
+            password: ''
+            database: graphbook_test
+            username: root
+            host: localhost
+            JWT_SECRET: 1234
+      - run:
+          name: "Install Heroku CLI"
+          command: curl https://cli-assets.heroku.com/install.sh | sh
+      - run:
+          name: "Login to Docker"
+          command: docker login -u $HEROKU_LOGIN -p $HEROKU_API_KEY registry.heroku.com
+      - run:
+          name: "Build Docker Image"
+          command: docker build -t registry.heroku.com/graphbook/web .
+      - run:
+          name: "Push Docker Image to Heroku registry"
+          command: docker push registry.heroku.com/graphbook/web:latest
+      - run:
+          name: "Run migrations for production DB"
+          command: sequelize db:migrate --migrations-path src/server/migrations --config src/server/config/index.js --env production
+      - run:
+          name: "Deploy image to Heroku App"
+          command: heroku container:release web --app graphbook
