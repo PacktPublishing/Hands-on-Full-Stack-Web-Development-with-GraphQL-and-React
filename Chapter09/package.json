@@ -49,7 +49,7 @@
     "react-infinite-scroller": "^1.2.4",
     "react-modal": "^3.8.1",
     "react-router-dom": "^4.3.1",
-    "sequelize": "^4.42.0",
+    "sequelize": "^5.15.1",
     "winston": "^3.1.0"
   },
   "devDependencies": {
