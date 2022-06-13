@@ -1,7 +1,3 @@
-## [Get this title for $10 on Packt's Spring Sale](https://www.packt.com/V13748?utm_source=github&utm_medium=packt-github-repo&utm_campaign=spring_10_dollar_2022)
------
-For a limited period, all eBooks and Videos are only $10. All the practical content you need \- by developers, for developers
-
 # Hands-on Full-Stack Web Development with GraphQL and React
 
 <a href="https://www.packtpub.com/web-development/hands-full-stack-web-development-graphql-and-react?utm_source=github&utm_medium=repository&utm_campaign=9781789134520 "><img src="https://www.packtpub.com/sites/default/files/cover_B10514.png" alt="Hands-on Full-Stack Web Development with GraphQL and React" height="256px" align="right"></a>
