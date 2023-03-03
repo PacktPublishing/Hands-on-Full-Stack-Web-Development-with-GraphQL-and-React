@@ -87,7 +87,7 @@
     "isomorphic-fetch": "^2.2.1",
     "jsdom": "^13.1.0",
     "mini-css-extract-plugin": "^0.4.5",
-    "mocha": "^5.2.0",
+    "mocha": "^10.2.0",
     "react-styleguidist": "^8.0.6",
     "request": "^2.88.0",
     "style-loader": "^0.23.1",
